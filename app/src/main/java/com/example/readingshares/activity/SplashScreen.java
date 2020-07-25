@@ -1,10 +1,12 @@
-package com.example.readingshares;
+package com.example.readingshares.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.readingshares.R;
 
 public class SplashScreen extends AppCompatActivity {
 

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "392419426802",
+    "firebase_url": "https://reading-shares.firebaseio.com",
+    "project_id": "reading-shares",
+    "storage_bucket": "reading-shares.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392419426802:android:15c07c2ce11a87672e2b6b",
+        "android_client_info": {
+          "package_name": "com.example.readingshares"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392419426802-a02qgnvjg6jbs49fn96from9nmucajvu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.readingshares",
+            "certificate_hash": "28d4a85b3f38303aae616ec83fd312ee27ef6fbd"
+          }
+        },
+        {
+          "client_id": "392419426802-shcje71amdo8chqf8l4urcoau34kdb23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXWaBkq9PG5bbXAoEYLKZVrgq6ASSxyG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392419426802-shcje71amdo8chqf8l4urcoau34kdb23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
