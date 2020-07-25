@@ -1,17 +1,16 @@
-package com.example.readingshares;
+package com.example.readingshares.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 
-public class ForgetPasswordActivity extends AppCompatActivity {
+import com.example.readingshares.R;
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forget_password);
-
+        setContentView(R.layout.activity_splash_screen);
     }
-
 }
