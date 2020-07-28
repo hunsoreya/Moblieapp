@@ -28,10 +28,11 @@
             android:textSize="25dp"
             />
         <TextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Username"
+            android:text="Email"
             android:textColor="@color/colorWhite"
             android:layout_gravity="start"
             android:textSize="15dp"
@@ -46,15 +47,15 @@
 
             >
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_login_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/line_text"
                 android:inputType="textEmailAddress"
                 android:padding="10dp"
 
-                >
+                />
 
-            </com.google.android.material.textfield.TextInputEditText>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,6 +74,7 @@
             app:passwordToggleEnabled="true"
             >
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_login_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/line_text"
@@ -99,16 +101,17 @@
                 android:textSize="15dp"
                 />
             <TextView
+                android:id="@+id/btn_forget_pw"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Forget password ?"
                 android:textColor="@color/colorWhite"
                 android:textSize="15dp"
                 android:background="@drawable/line_text"
-                android:onClick="forget"
                 />
         </LinearLayout>
         <Button
+            android:id="@+id/btn_signIn"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:text="Log In"
@@ -156,16 +159,15 @@
                 android:textSize="10dp"
                 />
             <TextView
+                android:id="@+id/btn_create_account"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Create new one"
                 android:background="@drawable/line_text"
                 android:textColor="@color/colorWhite"
                 android:textSize="10dp"
-                android:onClick="create"
                 />
         </LinearLayout>
     </LinearLayout>
-
 
 </LinearLayout>
