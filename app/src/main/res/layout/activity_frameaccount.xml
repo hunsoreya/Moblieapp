@@ -136,14 +136,14 @@
         </LinearLayout>
         <Button
             android:id="@+id/btn_account_logout"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_height="55dp"
             android:text="Log Out"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:textColor="@color/colorWhite"
             android:background="@drawable/button"
-            android:onClick="log"
+            android:layout_marginStart="0dp"
             />
 
     </LinearLayout>

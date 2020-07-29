@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <LinearLayout
         android:id="@+id/cardview"
         android:layout_marginStart="10dp"
@@ -237,7 +236,4 @@
             android:layout_height="25dp"
             android:src="@drawable/ic_baseline_favoriteblack_24"/>
     </LinearLayout>
-
-
-
 </LinearLayout>
