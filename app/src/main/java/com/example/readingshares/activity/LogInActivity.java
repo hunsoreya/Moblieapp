@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.readingshares.R;
+import com.example.readingshares.fragment.HomeFragment;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -74,7 +75,7 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
 
         if(firebaseAuth.getCurrentUser() != null) {
             //handle the already authenticated user
-            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+            startActivity(new Intent(getApplicationContext(), HomeFragment.class));
             finish();
         }
     }
@@ -122,7 +123,7 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                            startActivity(new Intent(getApplicationContext(), HomeFragment.class));
                         }
                     }, 2000);
 
@@ -202,7 +203,7 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
 
                             Toast.makeText(LogInActivity.this, "login successfully", Toast.LENGTH_SHORT).show();
                             //going to homepage
-                            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                            startActivity(new Intent(getApplicationContext(), HomeFragment.class));
 
                         } else {
                             Toast.makeText(LogInActivity.this, "login successfully", Toast.LENGTH_SHORT).show();

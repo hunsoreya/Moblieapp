@@ -1,4 +1,4 @@
-package com.example.readingshares.activity;
+package com.example.readingshares.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,13 +11,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.readingshares.R;
-import com.example.readingshares.activity.model.Book;
-import com.example.readingshares.activity.recyclerview.BookAdapter;
+import com.example.readingshares.model.Book;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeActivity extends Fragment {
+public class HomeFragment extends Fragment {
     private RecyclerView rvBooks;
     private BookAdapter bookAdapter;
     private List<Book> mdata;

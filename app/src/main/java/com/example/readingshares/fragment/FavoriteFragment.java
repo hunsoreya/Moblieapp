@@ -1,4 +1,4 @@
-package com.example.readingshares.activity;
+package com.example.readingshares.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.readingshares.R;
 
-public class FavoriteActivity extends Fragment {
+public class FavoriteFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){

@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.readingshares.R;
+import com.example.readingshares.fragment.HomeFragment;
 import com.example.readingshares.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -60,7 +61,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
         if(firebaseAuth.getCurrentUser() != null) {
             //handle the already authenticated user
-            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+            startActivity(new Intent(getApplicationContext(), HomeFragment.class));
             finish();
         }
     }
@@ -140,7 +141,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                                         new Handler().postDelayed(new Runnable() {
                                             @Override
                                             public void run() {
-                                                startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                                                startActivity(new Intent(getApplicationContext(), HomeFragment.class));
                                             }
                                         }, 2000);
 

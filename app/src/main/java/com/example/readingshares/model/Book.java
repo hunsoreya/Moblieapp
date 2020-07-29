@@ -1,4 +1,4 @@
-package com.example.readingshares.activity.model;
+package com.example.readingshares.model;
 
 public class Book {
     private  String title,description,author,imgUrl;
