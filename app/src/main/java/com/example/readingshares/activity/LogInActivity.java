@@ -16,6 +16,10 @@ public class LogInActivity extends AppCompatActivity {
         setContentView(R.layout.activity_log_in);
 
     }
+    public void log(View view){
+        Intent intent = new Intent(LogInActivity.this, MainActivity.class);
+        startActivity(intent);
+    }
     public void create(View view){
         Intent intent = new Intent(LogInActivity.this,RegisterActivity.class);
         startActivity(intent);
