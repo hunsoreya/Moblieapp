@@ -151,7 +151,6 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
 
         Intent intent = googleSignInClient.getSignInIntent();
         startActivityForResult(intent, RC_SIGN_IN);
-
     }
 
     public void openForgetScreen(){
@@ -235,7 +234,5 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
         }
 
     }
-
-
 
 }

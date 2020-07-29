@@ -1,44 +1,66 @@
 package com.example.readingshares.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
+import android.view.ViewGroup;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.readingshares.R;
-import com.facebook.drawee.backends.pipeline.Fresco;
-import com.google.firebase.auth.FirebaseAuth;
+import com.example.readingshares.activity.model.Book;
+import com.example.readingshares.activity.recyclerview.BookAdapter;
 
-public class HomeActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
 
-    private Button btn_logout;
+public class HomeActivity extends Fragment {
+    private RecyclerView rvBooks;
+    private BookAdapter bookAdapter;
+    private List<Book> mdata;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Fresco.initialize(this);
-        setContentView(R.layout.activity_home);
-
-        //reference
-        btn_logout = findViewById(R.id.btn_logout);
-
-        btn_logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                logout();
-            }
-        });
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
+        View view = inflater.inflate(R.layout.activity_framehome,container,false);
+        initViews(view);
+        initmdataBook();
+        setupBookAdapter();
+        return view;
 
     }
-
-    //log user out
-    private void logout() {
-
-        FirebaseAuth.getInstance().signOut();
-        startActivity(new Intent(getApplicationContext(), LogInActivity.class));
-        finish();
-
+    private void setupBookAdapter() {
+        bookAdapter =new BookAdapter(mdata);
+        rvBooks.setAdapter(bookAdapter);
     }
+
+    private void initmdataBook(){
+
+        //testing .. create radom set book
+        //get data to web server or frie base
+        mdata =new ArrayList<>();
+        mdata .add(new Book(R.drawable.a));
+        mdata .add(new Book(R.drawable.b));
+        mdata .add(new Book(R.drawable.c));
+        mdata .add(new Book(R.drawable.d));
+        mdata .add(new Book(R.drawable.e));
+        mdata .add(new Book(R.drawable.f));
+        mdata .add(new Book(R.drawable.g));
+    }
+
+    private void initViews(View view){
+
+        rvBooks = view.findViewById(R.id.rv_book);
+        rvBooks .setLayoutManager(new LinearLayoutManager(getContext()));
+        rvBooks.setHasFixedSize(true);
+    }
+
+
+
+
+
 }
+
