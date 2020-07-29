@@ -12,6 +12,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,7 +38,8 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
 
     private TextView btn_forget_pw, btn_create_account;
     private EditText txt_login_email, txt_login_pw;
-    private Button btn_signIn, btn_google_sign_in;
+    private Button btn_signIn;
+    private ImageView btn_google_sign_in;
 
     private FirebaseAuth firebaseAuth;
     private GoogleSignInClient googleSignInClient;
@@ -51,7 +53,7 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
         btn_forget_pw = (TextView) findViewById(R.id.btn_forget_pw);
         btn_create_account = (TextView) findViewById(R.id.btn_create_account);
         btn_signIn = (Button) findViewById(R.id.btn_signIn);
-        btn_google_sign_in = (Button) findViewById(R.id.btn_google_sign_in);
+        btn_google_sign_in = (ImageView) findViewById(R.id.btn_google_sign_in);
 
         txt_login_email = (EditText) findViewById(R.id.txt_login_email);
         txt_login_pw = (EditText) findViewById(R.id.txt_login_password);
@@ -75,7 +77,7 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
 
         if(firebaseAuth.getCurrentUser() != null) {
             //handle the already authenticated user
-            startActivity(new Intent(getApplicationContext(), HomeFragment.class));
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
             finish();
         }
     }
@@ -123,7 +125,7 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            startActivity(new Intent(getApplicationContext(), HomeFragment.class));
+                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         }
                     }, 2000);
 

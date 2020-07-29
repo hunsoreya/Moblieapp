@@ -95,29 +95,32 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="5dp"
         android:paddingLeft="30dp"
         android:orientation="vertical"
         >
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
             <ImageView
                 android:layout_width="36dp"
-                android:layout_height="36dp"
+                android:layout_height="31dp"
                 android:src="@drawable/ic_baseline_email_24"/>
             <TextView
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="15dp"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:text="soreyahun.it@gmail.com"
                 />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="31dp"
@@ -131,9 +134,17 @@
                 android:text="+ 855 1538 0328"
                 />
         </LinearLayout>
-
-
-
+        <Button
+            android:id="@+id/btn_account_logout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Log Out"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button"
+            android:onClick="log"
+            />
 
     </LinearLayout>
 

@@ -128,12 +128,9 @@
             android:layout_margin="20dp"
 
             >
-<<<<<<< HEAD
-            <Button
-                android:id="@+id/btn_google_sign_in"
-=======
+
             <ImageView
->>>>>>> 03852ab6ca09147530a618e1210056ef69ae45a4
+
                 android:layout_width="50dp"
                 android:layout_height="65dp"
                 android:layout_weight="50"
@@ -142,6 +139,7 @@
                 android:src="@drawable/fb"
                 />
             <ImageView
+                android:id="@+id/btn_google_sign_in"
                 android:layout_width="50dp"
                 android:layout_height="65dp"
                 android:layout_weight="50"

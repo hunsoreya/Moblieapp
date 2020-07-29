@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Reading Shares</string>
-<<<<<<< HEAD
+
 
     <!--register_form input for user-->
 
@@ -14,9 +14,8 @@
     <string name="registration_failure">Registration failure</string>
     <string name="input_error_email_invalid">enter a valid email</string>
 
-=======
+
     <string name="search">Search</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
->>>>>>> 03852ab6ca09147530a618e1210056ef69ae45a4
 </resources>
